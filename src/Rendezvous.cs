@@ -16,7 +16,7 @@ namespace Rendezvousdotnet
         
         public Rendezvous(IEnumerable<Node> nodes)
         {
-            var _nodes = new ConcurrentDictionary<string, Node>
+             _nodes = new ConcurrentDictionary<string, Node>
                 (nodes.ToDictionary(node => node.Name));
         }
 
