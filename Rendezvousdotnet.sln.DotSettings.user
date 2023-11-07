@@ -1,0 +1,32 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15937e60_002Dcde0_002D465c_002Da4b5_002Db3ce59bf4902/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=318db136_002D9847_002D481d_002D9b26_002Deba6a94b0e06/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Rendezvous_Init_IEnumarable_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::BB81DAEF-DCDF-4113-863B-725E2334C974::net7.0::RedezvousTest.RedezvousTests.Rendezvous_Init_IEnumarable_Success&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=720da54b_002Dd088_002D4605_002D92a6_002Dbeeab58f3417/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;RedezvousTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net6.0::RendezvousdotnetTest.Tests.Rendezvous_IEnumarable_Init_NotEmpty&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9783321a_002Db1f9_002D4f42_002Dafdf_002Db919de44081e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Rendezvous_IEnumarable_Init_Duplicate_NotEmpty #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net7.0::RendezvousdotnetTest.Tests.Rendezvous_IEnumarable_Init_Duplicate_NotEmpty&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net7.0::RendezvousdotnetTest.Tests.AddNode_Null_Exception&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net7.0::RendezvousdotnetTest.Tests.GetNode_SameKey_SameNode&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cdd4592a_002D1d56_002D466f_002D9203_002D17244aab42a7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Rendezvous_IEnumarable_Init_Duplicate_NotEmpty" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net7.0::RendezvousdotnetTest.Tests.Rendezvous_IEnumarable_Init_Duplicate_NotEmpty&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fa8eb3be_002Ddb1e_002D4a5a_002D9abf_002Dab5b508a65bb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Rendezvous_IEnumarable_Init_NotEmpty" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::4CC9B526-BB21-463C-88E1-4ED4C76B2A21::net6.0::RendezvousdotnetTest.Tests.Rendezvous_IEnumarable_Init_NotEmpty&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>

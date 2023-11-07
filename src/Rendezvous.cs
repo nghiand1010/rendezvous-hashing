@@ -9,15 +9,24 @@ namespace Rendezvousdotnet
     {
         private ConcurrentDictionary<string, Node> _nodes;
 
-        public Rendezvous(ConcurrentDictionary<string, Node> nodes)
-        {
-            _nodes = nodes;
-        }
+        public int NodeCount => _nodes == null ? 0 : _nodes.Count;
         
+        public Rendezvous()
+        {
+            _nodes = new ConcurrentDictionary<string, Node>();
+        }
         public Rendezvous(IEnumerable<Node> nodes)
         {
-             _nodes = new ConcurrentDictionary<string, Node>
-                (nodes.ToDictionary(node => node.Name));
+            _nodes = new ConcurrentDictionary<string, Node>();
+            foreach (var node in nodes)
+            {
+                if (_nodes.ContainsKey(node.Name))
+                {
+                    continue;
+                }
+
+                _nodes.TryAdd(node.Name, node);
+            }
         }
 
         /// <summary>
@@ -26,7 +35,26 @@ namespace Rendezvousdotnet
         /// <param name="node"></param>
         public void Add(Node node)
         {
+            if (node==null)
+            {
+                throw new ArgumentNullException("node cannot be null");
+            }
             _nodes.TryAdd(node.Name, node);
+        }
+
+        /// <summary>
+        /// Add Node to Collection
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="weight"></param>
+        /// 
+        public void Add(string name,int weight=1)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new ArgumentNullException("name cannot be null");
+            }
+            _nodes.TryAdd(name,new Node(name,weight));
         }
 
         /// <summary>
@@ -68,6 +96,11 @@ namespace Rendezvousdotnet
 
     public class Node
     {
+        public Node(string name, int weight=1)
+        {
+            this.Name = name;
+            this.Weight = weight;
+        }
         public string Name { get; set; }
         public int Weight { get; set; }
     }
