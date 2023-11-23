@@ -74,7 +74,7 @@ namespace Rendezvousdotnet
         public Node GetNode(string key)
         {
             double maxValue = double.MinValue;
-            Node max = null;
+            Node max = _nodes.First().Value;
 
             foreach (var node in _nodes)
             {

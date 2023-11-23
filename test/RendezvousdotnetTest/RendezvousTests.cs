@@ -7,6 +7,7 @@ namespace RendezvousdotnetTest
         [SetUp]
         public void Setup()
         {
+        
         }
 
         [Test]
@@ -60,6 +61,34 @@ namespace RendezvousdotnetTest
             var node2 = rendezvous.GetNode(key);
             Assert.IsTrue(node1.Name == node2.Name);
 
+        }
+        
+        [Test]
+        public void AddNodeWithWeight_ReturnByWeight()
+        {
+            List<Node> nodes = new List<Node>();
+            nodes.Add(new Node("node1", 1));
+            nodes.Add(new Node("node2", 2));
+            Rendezvous rendezvous = new Rendezvous(nodes);
+
+            int count1=0, count2=0;
+            for (int i = 0; i < 1000; i++)
+            {
+                var key = Guid.NewGuid().ToString();
+                var node1 = rendezvous.GetNode(key);
+                if (node1.Name == "node1")
+                {
+                    count1++;
+                }
+                var node2 = rendezvous.GetNode(key);
+
+                if (node2.Name=="node2")
+                {
+                    count2++;
+                }
+            }
+            
+            Assert.IsTrue(count1*1.5<count2);
         }
 
     }
