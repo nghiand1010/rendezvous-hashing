@@ -91,5 +91,23 @@ namespace RendezvousdotnetTest
             Assert.IsTrue(count1*1.5<count2);
         }
 
+        [Test]
+        public void RemoveNode_Success()
+        {
+            List<Node> nodes = new List<Node>();
+            nodes.Add(new Node("node1", 1));
+            nodes.Add(new Node("node2", 2));
+            Rendezvous rendezvous = new Rendezvous(nodes);
+            var key = Guid.NewGuid().ToString();
+            var nodeBeforeRemove = rendezvous.GetNode(key);
+            var beforeNodeName = nodeBeforeRemove.Name;
+            rendezvous.Remove(nodeBeforeRemove);
+
+            var nodeAfterRemove = rendezvous.GetNode(key);
+
+            Assert.IsTrue(beforeNodeName != nodeAfterRemove.Name);
+            
+        }
+
     }
 }
