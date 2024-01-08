@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Rendezvousdotnet.csproj" />
+    <ProjectReference Include="..\..\src\Rendezvous.csproj" />
   </ItemGroup>
 
 </Project>

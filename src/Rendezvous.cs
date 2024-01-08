@@ -3,19 +3,19 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rendezvousdotnet
+namespace Rendezvous
 {
-    public class Rendezvous
+    public class RendezvousHash
     {
         private ConcurrentDictionary<string, Node> _nodes;
 
         public int NodeCount => _nodes == null ? 0 : _nodes.Count;
         
-        public Rendezvous()
+        public RendezvousHash()
         {
             _nodes = new ConcurrentDictionary<string, Node>();
         }
-        public Rendezvous(IEnumerable<Node> nodes)
+        public RendezvousHash(IEnumerable<Node> nodes)
         {
             _nodes = new ConcurrentDictionary<string, Node>();
             foreach (var node in nodes)

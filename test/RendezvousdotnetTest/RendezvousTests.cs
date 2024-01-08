@@ -1,4 +1,4 @@
-using Rendezvousdotnet;
+using Rendezvous;
 
 namespace RendezvousdotnetTest
 {
@@ -18,7 +18,7 @@ namespace RendezvousdotnetTest
             {
                 nodes.Add(new Node("node" + i, 1));
             }
-            Rendezvous rendezvous = new Rendezvous(nodes);
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
             Assert.IsTrue(rendezvous.NodeCount==nodes.Count);
         }
         
@@ -31,7 +31,7 @@ namespace RendezvousdotnetTest
                 nodes.Add(new Node("node" + i, 1));
             }
             nodes.Add(new Node("node1",1));
-            Rendezvous rendezvous = new Rendezvous(nodes);
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
             
             Assert.IsTrue(rendezvous.NodeCount==nodes.Count-1);
         }
@@ -40,7 +40,7 @@ namespace RendezvousdotnetTest
         [Test]
         public void AddNode_Null_Exception()
         {
-            Rendezvous rendezvous = new Rendezvous();
+            Rendezvous.RendezvousHash rendezvous = new RendezvousHash();
             Assert.Throws<ArgumentNullException>(() => 
                 rendezvous.Add(null));
 
@@ -54,7 +54,7 @@ namespace RendezvousdotnetTest
             {
                 nodes.Add(new Node("node" + i, 1));
             }
-            Rendezvous rendezvous = new Rendezvous(nodes);
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
 
             var key = Guid.NewGuid().ToString();
             var node1 = rendezvous.GetNode(key);
@@ -69,7 +69,7 @@ namespace RendezvousdotnetTest
             List<Node> nodes = new List<Node>();
             nodes.Add(new Node("node1", 1));
             nodes.Add(new Node("node2", 2));
-            Rendezvous rendezvous = new Rendezvous(nodes);
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
 
             int count1=0, count2=0;
             for (int i = 0; i < 1000; i++)
@@ -97,7 +97,7 @@ namespace RendezvousdotnetTest
             List<Node> nodes = new List<Node>();
             nodes.Add(new Node("node1", 1));
             nodes.Add(new Node("node2", 2));
-            Rendezvous rendezvous = new Rendezvous(nodes);
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
             var key = Guid.NewGuid().ToString();
             var nodeBeforeRemove = rendezvous.GetNode(key);
             var beforeNodeName = nodeBeforeRemove.Name;
