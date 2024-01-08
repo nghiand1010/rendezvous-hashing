@@ -9,5 +9,9 @@
         <RepositoryType>git</RepositoryType>
         <PackageTags>hashing;rendezvous</PackageTags>
         <PackageId>RendezvousSharp</PackageId>
+        <Company>AdamNguyen</Company>
+        <Authors>AdamNguyen</Authors>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 </Project>
