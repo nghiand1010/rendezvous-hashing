@@ -1,6 +1,10 @@
 # rendezvous-hashing
 This Library to use rendezvous-hashing [rendezvous-hashing](https://en.wikipedia.org/wiki/Rendezvous_hashing) with C#
 
+# Install 
+```
+dotnet add package RendezvousSharp
+```
 
 You can init as follows
 # 1. Init with List Node
