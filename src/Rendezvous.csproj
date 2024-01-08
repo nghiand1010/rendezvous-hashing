@@ -1,6 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <Authors>AdamNguyen</Authors>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Library for Rendezvous Hashing</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/nghiand1010/rendezvous-hashing</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nghiand1010/rendezvous-hashing</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>hashing;rendezvous</PackageTags>
+        <PackageId>RendezvousSharp</PackageId>
     </PropertyGroup>
 </Project>
