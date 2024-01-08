@@ -109,5 +109,18 @@ namespace RendezvousdotnetTest
             
         }
 
+        [Test]
+        public void AddNode_Success()
+        {
+            List<Node> nodes = new List<Node>();
+            nodes.Add(new Node("node1", 1));
+            nodes.Add(new Node("node2", 2));
+            Rendezvous.RendezvousHash rendezvous = new Rendezvous.RendezvousHash(nodes);
+            rendezvous.Add(new Node("node3"));
+       
+            Assert.IsTrue(rendezvous.NodeCount == 3);
+
+        }
+
     }
 }
