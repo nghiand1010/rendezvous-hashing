@@ -1,6 +1,9 @@
 # rendezvous-hashing
 This Library to use rendezvous-hashing [rendezvous-hashing](https://en.wikipedia.org/wiki/Rendezvous_hashing) with C#
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/adamnguyen)
+
+
 # Install 
 ```
 dotnet add package RendezvousSharp
